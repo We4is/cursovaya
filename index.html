@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index/index.css">
+    <title>SportTime — Спортивное питание</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_logo">
+            <div class="header_socials">
+                <a href="#" aria-label="WhatsApp"><img src="./images/header-images/whatsapp.png" alt="WhatsApp"></a>
+                <a href="#" aria-label="Telegram"><img src="./images/header-images/Telegram.png" alt="Telegram"></a>
+            </div>
+            <a href="index.html">
+                <h1>SportTime</h1>
+            </a>
+            <nav aria-label="Основная навигация">
+                <a href="about.html">О Компании</a>
+                <a href="index.html#footer">Контакты</a>
+            </nav>
+        </div>
+        <div class="header_nav">
+            <div class="header_nav_left">
+                <a href="catalog.html" class="btn_catalog">Каталог</a>
+                <div class="header_search_wrap">
+                    <div class="header_search">
+                        <input type="text" placeholder="Найти любимые товары" aria-label="Поиск товаров"
+                            id="search_input">
+                        <button type="button" id="search_btn">Найти</button>
+                    </div>
+                </div>
+            </div>
+            <div class="header_profile">
+                <a href="login-register.html" class="profile_log">
+                    <img src="./images/header-images/Profile.png" alt="Профиль">
+                    <span>Войти</span>
+                </a>
+                <a href="cart.html" class="profile_buy">
+                    <img src="./images/header-images/Buy.png" alt="Корзина">
+                    <span>Корзина</span>
+                </a>
+            </div>
+            <button class="burger_btn" aria-label="Открыть меню" aria-expanded="false">
+                <img src="./images/header-images/menu.png" alt="">
+            </button>
+        </div>
+        <nav class="mobile_menu" aria-label="Мобильная навигация">
+            <a href="about.html">О Компании</a>
+            <a href="index.html#footer">Контакты</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="login-register.html">Войти</a>
+            <a href="cart.html">Корзина</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Наш ассортимент</h2>
+        <nav aria-label="Категории товаров">
+            <div class="link_block protein">
+                <a href="catalog.html?cat=protein">
+                    <p>Протеин</p>
+                </a>
+            </div>
+            <div class="link_block creatine">
+                <a href="catalog.html?cat=creatine">
+                    <p>Креатин</p>
+                </a>
+            </div>
+            <div class="link_block geyner">
+                <a href="catalog.html?cat=gainer">
+                    <p>Гейнеры</p>
+                </a>
+            </div>
+            <div class="link_block collagen">
+                <a href="catalog.html?cat=collagen">
+                    <p>Коллаген</p>
+                </a>
+            </div>
+            <div class="link_block magniy">
+                <a href="catalog.html?cat=magnesium">
+                    <p>Магний</p>
+                </a>
+            </div>
+        </nav>
+
+        <h2>Популярные товары</h2>
+
+        <section class="likely" aria-label="Популярные товары">
+            <article class="card" data-id="pr1">
+                <button class="heart_btn" data-id="pr1" aria-label="В корзину"><svg width="20" height="20"
+                        viewBox="0 0 24 24" fill="none" stroke="#BDBDBD" stroke-width="2">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg></button>
+                <img src="./images/main-images/protein.png" alt="Протеин">
+                <div class="rating"><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg></div>
+                <p>Сывороточный протеин Gold Standard</p>
+                <div class="price">
+                    <p>589 BYN.</p>
+                </div>
+            </article>
+            <article class="card" data-id="cr1">
+                <button class="heart_btn" data-id="cr1" aria-label="В корзину"><svg width="20" height="20"
+                        viewBox="0 0 24 24" fill="none" stroke="#BDBDBD" stroke-width="2">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg></button>
+                <img src="./images/main-images/creatine.png" alt="Креатин">
+                <div class="rating"><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg></div>
+                <p>Креатин моногидрат 300 г</p>
+                <div class="price">
+                    <p>149 BYN.</p>
+                </div>
+            </article>
+            <article class="card" data-id="cl1">
+                <button class="heart_btn" data-id="cl1" aria-label="В корзину"><svg width="20" height="20"
+                        viewBox="0 0 24 24" fill="none" stroke="#BDBDBD" stroke-width="2">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg></button>
+                <img src="./images/main-images/collagen.png" alt="Коллаген">
+                <div class="rating"><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg></div>
+                <p>Гидролизованный коллаген I и III</p>
+                <div class="price">
+                    <p>235 BYN.</p>
+                </div>
+            </article>
+            <article class="card" data-id="mg1">
+                <button class="heart_btn" data-id="mg1" aria-label="В корзину"><svg width="20" height="20"
+                        viewBox="0 0 24 24" fill="none" stroke="#BDBDBD" stroke-width="2">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg></button>
+                <img src="./images/main-images/magniy.png" alt="Магний">
+                <div class="rating"><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#F5A623">
+                        <path
+                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                    </svg></div>
+                <p>Магний хелат 400 мг</p>
+                <div class="price">
+                    <p>210 BYN.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="info_boxes" aria-label="Наши преимущества">
+            <article class="info_box">
+                <img src="./images/main-images/1.png" alt="">
+                <h3>100% оригиналы</h3>
+                <p>Мы работаем со всеми представительствами брендов напрямую, а по некоторым из них являемся
+                    эксклюзивным оптовым каналом дистрибуции, что дает нам возможность предлагать лучшие цены и условия.
+                </p>
+            </article>
+            <article class="info_box">
+                <img src="./images/main-images/2.png" alt="">
+                <h3>100% качество</h3>
+                <p>У нас оригинальный и сертифицированный товар, что подтверждено официальными документами.</p>
+            </article>
+            <article class="info_box">
+                <img src="./images/main-images/3.png" alt="">
+                <h3>Большой ассортимент</h3>
+                <p>Довольно широкий ассортимент товаров, вы обязательно сможете подобрать именно то, что нужно. У нас
+                    более 3000 категорий.</p>
+            </article>
+            <article class="info_box">
+                <img src="./images/main-images/4.png" alt="">
+                <h3>Доставка</h3>
+                <p>Моментальная отгрузка товаров из Минска в любую точку Беларуси любой крупной транспортной компанией.
+                    Отгрузка товара в течение 1 дня.</p>
+            </article>
+            <article class="info_box">
+                <img src="./images/main-images/5.png" alt="">
+                <h3>Нам можно доверять</h3>
+                <p>Наша компания более 10 лет занимается продажей спортивных товаров. У нас продуманы даже самые мелкие
+                    детали.</p>
+            </article>
+            <article class="info_box">
+                <img src="./images/main-images/6.png" alt="">
+                <h3>У нас нет очередей</h3>
+                <p>После оформления заказа вы не попадете в очередь на выставление счета или на сборку заказа. Мы
+                    осуществляем этот сервис моментально.</p>
+            </article>
+            <article class="info_box">
+                <img src="./images/main-images/7.png" alt="">
+                <h3>Оперативная поддержка</h3>
+                <p>Если у вас возникла проблема, мы обязательно ее решим. Мы работаем на все 100%, нам нечего бояться.
+                </p>
+            </article>
+            <article class="info_box">
+                <img src="./images/main-images/8.png" alt="">
+                <h3>Заказы</h3>
+                <p>Минимальная сумма заказа — всего 30 руб. Мы открыты для сотрудничества с малыми, средними и крупным
+                    бизнесом.</p>
+            </article>
+        </section>
+
+        <section class="email_box">
+            <h2 class="email_title">Оптовый прайс на почту</h2>
+            <p class="email_subtitle">В случае заинтересованности готовы направить вам прайс-лист с оптовыми ценами</p>
+            <form class="main_search" action="#" method="post">
+                <input type="email" placeholder="Введите Ваш E-mail" aria-label="Ваш email" required>
+                <button type="reset">Продолжить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer_inner">
+            <section class="footer_brand">
+                <p class="footer_logo">SportTime</p>
+                <div class="footer_brand_meta">
+                    <p>© 2026 "SportTime"</p>
+                    <p>Политика конфиденциальности</p>
+                </div>
+                <nav class="footer_socials" aria-label="Социальные сети">
+                    <a href="#"><img src="./images/footer-images/instagram.png" alt="Instagram" /></a>
+                    <a href="#"><img src="./images/footer-images/facebook.png" alt="Facebook" /></a>
+                    <a href="#"><img src="./images/footer-images/vk.png" alt="VK" /></a>
+                    <a href="#"><img src="./images/footer-images/whatsapp.png" alt="WhatsApp" /></a>
+                    <a href="#"><img src="./images/footer-images/Telegram.png" alt="Telegram" /></a>
+                </nav>
+            </section>
+            <section class="footer_col">
+                <nav aria-label="Информация">
+                    <h3>Информация</h3>
+                    <a href="#">О компании</a>
+                    <a href="#">Маркетинговые материалы</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Карта сайта</a>
+                </nav>
+                <address>
+                    <h3>Контакты</h3>
+                    <p>+375 29 526 67 42</p>
+                    <p>+375 44 239 91 83</p>
+                    <p>Минск ул. Притыцкого 156</p>
+                </address>
+            </section>
+            <section class="footer_col">
+                <nav aria-label="Розничным покупателям">
+                    <h3>Розничным покупателям</h3>
+                    <a href="#">Как сделать заказ</a>
+                    <a href="#">Доставка и оплата</a>
+                    <a href="#">Возврат</a>
+                    <a href="#">Вопрос-ответ</a>
+                </nav>
+            </section>
+            <section class="footer_col">
+                <nav aria-label="Оптовым покупателям">
+                    <h3>Оптовым покупателям</h3>
+                    <a href="#">Как сделать заказ</a>
+                    <a href="#">Доставка и оплата</a>
+                    <a href="#">Возврат</a>
+                    <a href="#">Вопрос-ответ</a>
+                </nav>
+            </section>
+            <aside class="footer_text">
+                <p>Вы можете оформить заказ по телефону или получить ответы на любые интересующие вас вопросы.</p>
+                <p>Есть вопрос? Напишите нам письмо или воспользуйтесь формой <a href="#">обратной связи</a></p>
+            </aside>
+        </div>
+        <hr />
+        <div class="footer_bottom">
+            <small>Интернет-магазин «SportTime» — спортивное питание по всей Беларуси</small>
+            <p><span>Инн:</span> 667027205771 &nbsp; <span>ОГРН:</span> 310667022200016</p>
+            <div class="footer-payments">
+                <img src="./images/footer-images/mastercard.png" alt="Mastercard" />
+                <img src="./images/footer-images/visa.png" alt="Visa" />
+                <img src="./images/footer-images/mir.png" alt="Мир" />
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script/cart.js"></script>
+    <script src="./script/header.js"></script>
+    <script>
+        const HEART_FILL = `<svg width="20" height="20" viewBox="0 0 24 24" fill="#4174CB" stroke="#4174CB" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>`;
+        const HEART_OUT = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#BDBDBD" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>`;
+
+        document.querySelectorAll('.likely .card').forEach(card => {
+            card.addEventListener('click', e => {
+                if (e.target.closest('.heart_btn')) return;
+                window.location.href = `product.html?id=${card.dataset.id}`;
+            });
+        });
+
+        document.querySelectorAll('.heart_btn').forEach(btn => {
+            const id = btn.dataset.id;
+
+            btn.innerHTML = cartHas(id) ? HEART_FILL : HEART_OUT;
+
+            btn.addEventListener('click', e => {
+                e.stopPropagation();
+                const card = btn.closest('.card');
+                const name = card.querySelector('p').textContent;
+                const priceText = card.querySelector('.price p').textContent;
+                const price = parseInt(priceText.replace(/\D/g, '')) || 0;
+                const img = card.querySelector('img').getAttribute('src').split('/').pop();
+
+                if (cartHas(id)) {
+                    cartRemove(id);
+                    btn.innerHTML = HEART_OUT;
+                } else {
+                    cartAdd({ id, name, price, image: img, article: id });
+                    btn.innerHTML = HEART_FILL;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

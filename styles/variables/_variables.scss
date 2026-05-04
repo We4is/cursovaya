@@ -1,0 +1,117 @@
+$color-primary: #4174CB;
+$color-primary-dark: #153E84;
+$color-primary-light: #8FAFE5;
+
+$color-text:#333333;
+$color-text-muted:#828282;
+$color-text-light:#BDBDBD;
+
+$color-white:#FFFFFF;
+$color-gray-1:#F2F2F2;
+$color-gray-2:#E0E0E0;
+$color-gray-3:#BDBDBD;
+
+$color-success:#27AE60; 
+$color-danger:#E74C3C;
+$color-star:#F5A623;
+
+$font-main: Arial, Helvetica, sans-serif;
+
+$fs-xs: 12px;
+$fs-sm: 14px;
+$fs-base: 16px;
+$fs-md: 18px;
+$fs-lg: 20px;
+$fs-xl: 24px;
+$fs-xxl: 32px;
+
+$radius-sm: 2px;
+$radius-md: 4px;
+$radius-lg: 8px;
+
+$shadow-card:   0px 2px 0px 0px #E0E0E0;
+$shadow-hover:  0 4px 16px rgba(0, 0, 0, 0.1);
+
+$container-max: 1180px;
+$container-pad: 16px;
+
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: $color-primary;
+    color: $color-white;
+    border: none;
+    border-radius: $radius-md;
+    font-family: $font-main;
+    font-size: $fs-base;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+
+    &:hover {
+        background-color: $color-primary-dark;
+        color: $color-white;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+}
+
+@mixin btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    border-radius: $radius-md;
+    font-family: $font-main;
+    font-size: $fs-base;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    white-space: nowrap;
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+}
+
+@mixin text-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin list-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

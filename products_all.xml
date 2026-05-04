@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+
+  <product category="protein">
+    <id>pr1</id>
+    <article>124Pr01</article>
+    <n>Сывороточный протеин Gold Standard</n>
+    <brand>Optimum Nutrition</brand>
+    <description>Сывороточный протеин премиум-класса с высоким содержанием BCAA. Идеален для набора мышечной массы и восстановления после тренировок. Содержит 24 г белка на порцию.</description>
+    <weight>2.27 кг</weight>
+    <flavor>Шоколад</flavor>
+    <size>2270</size>
+    <price_retail>589</price_retail>
+    <price_wholesale>420</price_wholesale>
+    <price_preorder>399</price_preorder>
+    <price_package>2800</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>5</rating>
+    <country>США</country>
+    <standard>ISO 9001:2015</standard>
+    <package_type>Пластиковый контейнер</package_type>
+    <image>protein.png</image>
+  </product>
+  <product category="protein">
+    <id>pr2</id>
+    <article>124Pr02</article>
+    <n>Изолят сывороточного протеина</n>
+    <brand>MyProtein</brand>
+    <description>Изолят высшей степени очистки с минимальным содержанием жиров и лактозы. Быстро усваивается, подходит для людей с непереносимостью лактозы.</description>
+    <weight>1 кг</weight>
+    <flavor>Ваниль</flavor>
+    <size>1000</size>
+    <price_retail>399</price_retail>
+    <price_wholesale>280</price_wholesale>
+    <price_preorder>260</price_preorder>
+    <price_package>1900</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>4</rating>
+    <country>Великобритания</country>
+    <standard>ISO 22000:2018</standard>
+    <package_type>Пакет с застёжкой</package_type>
+    <image>protein.png</image>
+  </product>
+  <product category="protein">
+    <id>pr3</id>
+    <article>124Pr03</article>
+    <n>Казеин медленный протеин</n>
+    <brand>BioTechUSA</brand>
+    <description>Медленный протеин на основе казеина — идеален для приёма перед сном. Обеспечивает плавное высвобождение аминокислот в течение 6–8 часов.</description>
+    <weight>1.8 кг</weight>
+    <flavor>Клубника</flavor>
+    <size>1800</size>
+    <price_retail>479</price_retail>
+    <price_wholesale>340</price_wholesale>
+    <price_preorder>320</price_preorder>
+    <price_package>2200</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>4</rating>
+    <country>Венгрия</country>
+    <standard>ГОСТ Р 52738-2007</standard>
+    <package_type>Пластиковый контейнер</package_type>
+    <image>protein.png</image>
+  </product>
+  <product category="protein">
+    <id>pr4</id>
+    <article>124Pr04</article>
+    <n>Растительный протеин веган</n>
+    <brand>Garden of Life</brand>
+    <description>100% растительный протеин из гороха и риса. Без глютена, ГМО и искусственных добавок. Подходит для веганов и вегетарианцев.</description>
+    <weight>900 г</weight>
+    <flavor>Шоколад</flavor>
+    <size>900</size>
+    <price_retail>450</price_retail>
+    <price_wholesale>310</price_wholesale>
+    <price_preorder>290</price_preorder>
+    <price_package>2100</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>false</in_stock>
+    <rating>3</rating>
+    <country>США</country>
+    <standard>USDA Organic</standard>
+    <package_type>Пакет с застёжкой</package_type>
+    <image>protein.png</image>
+  </product>
+  <product category="protein">
+    <id>pr5</id>
+    <article>124Pr05</article>
+    <n>Многокомпонентный протеин Matrix</n>
+    <brand>Syntrax</brand>
+    <description>Многокомпонентный протеин из 5 источников белка. Идеален для использования в течение дня — быстрое насыщение и длительное питание мышц.</description>
+    <weight>2.2 кг</weight>
+    <flavor>Карамель</flavor>
+    <size>2200</size>
+    <price_retail>530</price_retail>
+    <price_wholesale>380</price_wholesale>
+    <price_preorder>350</price_preorder>
+    <price_package>2500</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>5</rating>
+    <country>США</country>
+    <standard>GMP Certified</standard>
+    <package_type>Пластиковый контейнер</package_type>
+    <image>protein.png</image>
+  </product>
+
+  <product category="creatine">
+    <id>cr1</id>
+    <article>124Cr01</article>
+    <n>Креатин моногидрат 300 г</n>
+    <brand>BioTechUSA</brand>
+    <description>Чистый креатин моногидрат без добавок. Повышает силовые показатели, ускоряет восстановление и способствует росту мышечной массы.</description>
+    <weight>300 г</weight>
+    <flavor>Без вкуса</flavor>
+    <size>300</size>
+    <price_retail>149</price_retail>
+    <price_wholesale>105</price_wholesale>
+    <price_preorder>99</price_preorder>
+    <price_package>700</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>5</rating>
+    <country>Венгрия</country>
+    <standard>ГОСТ Р 52738-2007</standard>
+    <package_type>Пакет с застёжкой</package_type>
+    <image>creatine.png</image>
+  </product>
+  <product category="creatine">
+    <id>cr2</id>
+    <article>124Cr02</article>
+    <n>Креатин моногидрат 500 г</n>
+    <brand>MyProtein</brand>
+    <description>Экономичная упаковка чистого креатина моногидрата. Мелкодисперсный помол для лучшего растворения и усвоения организмом.</description>
+    <weight>500 г</weight>
+    <flavor>Без вкуса</flavor>
+    <size>500</size>
+    <price_retail>199</price_retail>
+    <price_wholesale>140</price_wholesale>
+    <price_preorder>130</price_preorder>
+    <price_package>950</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>4</rating>
+    <country>Великобритания</country>
+    <standard>ISO 22000:2018</standard>
+    <package_type>Пакет с застёжкой</package_type>
+    <image>creatine.png</image>
+  </product>
+  <product category="creatine">
+    <id>cr3</id>
+    <article>124Cr03</article>
+    <n>Креатин гидрохлорид 120 капс</n>
+    <brand>Optimum Nutrition</brand>
+    <description>Креатин в форме гидрохлорида — более растворимая форма. Не требует загрузочной фазы, не вызывает задержки воды.</description>
+    <weight>120 капс</weight>
+    <flavor>—</flavor>
+    <size>120</size>
+    <price_retail>249</price_retail>
+    <price_wholesale>175</price_wholesale>
+    <price_preorder>160</price_preorder>
+    <price_package>1200</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>false</in_stock>
+    <rating>4</rating>
+    <country>США</country>
+    <standard>NSF Certified for Sport</standard>
+    <package_type>Пластиковый флакон</package_type>
+    <image>creatine.png</image>
+  </product>
+  <product category="creatine">
+    <id>cr4</id>
+    <article>124Cr04</article>
+    <n>Креатин + электролиты 400 г</n>
+    <brand>KFD Nutrition</brand>
+    <description>Комплекс креатина с электролитами для оптимального увлажнения мышц во время тренировок. Улучшает выносливость и снижает мышечные судороги.</description>
+    <weight>400 г</weight>
+    <flavor>Лимон</flavor>
+    <size>400</size>
+    <price_retail>220</price_retail>
+    <price_wholesale>155</price_wholesale>
+    <price_preorder>145</price_preorder>
+    <price_package>1050</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>4</rating>
+    <country>Польша</country>
+    <standard>ISO 9001:2015</standard>
+    <package_type>Пакет с застёжкой</package_type>
+    <image>creatine.png</image>
+  </product>
+  <product category="creatine">
+    <id>cr5</id>
+    <article>124Cr05</article>
+    <n>Креатин этиловый эфир 200 г</n>
+    <brand>BSN</brand>
+    <description>Продвинутая форма креатина — этиловый эфир. Лучше проникает в мышечные клетки, эффективен в меньших дозах по сравнению с моногидратом.</description>
+    <weight>200 г</weight>
+    <flavor>Апельсин</flavor>
+    <size>200</size>
+    <price_retail>310</price_retail>
+    <price_wholesale>220</price_wholesale>
+    <price_preorder>200</price_preorder>
+    <price_package>1450</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>3</rating>
+    <country>США</country>
+    <standard>GMP Certified</standard>
+    <package_type>Пакет с застёжкой</package_type>
+    <image>creatine.png</image>
+  </product>
+
+  <product category="gainer">
+    <id>gn1</id>
+    <article>124Gn01</article>
+    <n>Serious Mass 2.7 кг</n>
+    <brand>Optimum Nutrition</brand>
+    <description>Высококалорийный гейнер для быстрого набора массы. Содержит 1250 ккал на порцию, 50 г белка, витамины и минералы. Идеален для хардгейнеров.</description>
+    <weight>2.7 кг</weight>
+    <flavor>Шоколад</flavor>
+    <size>2700</size>
+    <price_retail>399</price_retail>
+    <price_wholesale>280</price_wholesale>
+    <price_preorder>260</price_preorder>
+    <price_package>1900</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>5</rating>
+    <country>США</country>
+    <standard>ISO 9001:2015</standard>
+    <package_type>Пакет</package_type>
+    <image>geyner.png</image>
+  </product>
+  <product category="gainer">
+    <id>gn2</id>
+    <article>124Gn02</article>
+    <n>Hard Gainer Pro 3 кг</n>
+    <brand>BioTechUSA</brand>
+    <description>Профессиональный гейнер с комплексом углеводов и белков. Обогащён креатином и BCAA. Способствует быстрому восстановлению и росту мышц.</description>
+    <weight>3 кг</weight>
+    <flavor>Ваниль</flavor>
+    <size>3000</size>
+    <price_retail>450</price_retail>
+    <price_wholesale>315</price_wholesale>
+    <price_preorder>295</price_preorder>
+    <price_package>2100</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>4</rating>
+    <country>Венгрия</country>
+    <standard>ГОСТ Р 52738-2007</standard>
+    <package_type>Пакет</package_type>
+    <image>geyner.png</image>
+  </product>
+  <product category="gainer">
+    <id>gn3</id>
+    <article>124Gn03</article>
+    <n>Super Mass Gainer 6 кг</n>
+    <brand>MyProtein</brand>
+    <description>Мегагейнер для максимального набора массы. 6 кг продукта — экономичная упаковка. Сбалансированное соотношение белков и сложных углеводов.</description>
+    <weight>6 кг</weight>
+    <flavor>Карамель</flavor>
+    <size>6000</size>
+    <price_retail>650</price_retail>
+    <price_wholesale>460</price_wholesale>
+    <price_preorder>430</price_preorder>
+    <price_package>3000</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>false</in_stock>
+    <rating>4</rating>
+    <country>Великобритания</country>
+    <standard>ISO 22000:2018</standard>
+    <package_type>Пакет</package_type>
+    <image>geyner.png</image>
+  </product>
+  <product category="gainer">
+    <id>gn4</id>
+    <article>124Gn04</article>
+    <n>Real Gains 4.8 кг</n>
+    <brand>Universal Nutrition</brand>
+    <description>Гейнер с комплексным белком и медленными углеводами. Содержит пробиотики для улучшения пищеварения. Без искусственных красителей.</description>
+    <weight>4.8 кг</weight>
+    <flavor>Клубника</flavor>
+    <size>4800</size>
+    <price_retail>560</price_retail>
+    <price_wholesale>395</price_wholesale>
+    <price_preorder>370</price_preorder>
+    <price_package>2600</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>3</rating>
+    <country>США</country>
+    <standard>GMP Certified</standard>
+    <package_type>Пакет</package_type>
+    <image>geyner.png</image>
+  </product>
+  <product category="gainer">
+    <id>gn5</id>
+    <article>124Gn05</article>
+    <n>Gainer + креатин 3.5 кг</n>
+    <brand>KFD Nutrition</brand>
+    <description>Гейнер с добавлением креатина моногидрата. Двойной эффект: набор массы + рост силовых показателей. Отличное соотношение цена/качество.</description>
+    <weight>3.5 кг</weight>
+    <flavor>Шоколад-арахис</flavor>
+    <size>3500</size>
+    <price_retail>510</price_retail>
+    <price_wholesale>360</price_wholesale>
+    <price_preorder>335</price_preorder>
+    <price_package>2400</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>5</rating>
+    <country>Польша</country>
+    <standard>ISO 9001:2015</standard>
+    <package_type>Пакет</package_type>
+    <image>geyner.png</image>
+  </product>
+
+  <product category="collagen">
+    <id>cl1</id>
+    <article>124Cl01</article>
+    <n>Гидролизованный коллаген I и III</n>
+    <brand>NeoCell</brand>
+    <description>Гидролизованный коллаген типов I и III для кожи, ногтей и волос. Мелкодисперсные пептиды обеспечивают быстрое усвоение организмом.</description>
+    <weight>200 г</weight>
+    <flavor>Без вкуса</flavor>
+    <size>200</size>
+    <price_retail>235</price_retail>
+    <price_wholesale>165</price_wholesale>
+    <price_preorder>150</price_preorder>
+    <price_package>1100</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>5</rating>
+    <country>США</country>
+    <standard>NSF Certified</standard>
+    <package_type>Пластиковый контейнер</package_type>
+    <image>collagen.png</image>
+  </product>
+  <product category="collagen">
+    <id>cl2</id>
+    <article>124Cl02</article>
+    <n>Морской коллаген + витамин С</n>
+    <brand>California Gold Nutrition</brand>
+    <description>Коллаген из морских источников в сочетании с витамином С для лучшего синтеза. Поддерживает здоровье суставов, кожи и соединительной ткани.</description>
+    <weight>250 г</weight>
+    <flavor>Без вкуса</flavor>
+    <size>250</size>
+    <price_retail>320</price_retail>
+    <price_wholesale>225</price_wholesale>
+    <price_preorder>210</price_preorder>
+    <price_package>1500</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>4</rating>
+    <country>США</country>
+    <standard>GMP Certified</standard>
+    <package_type>Пластиковый контейнер</package_type>
+    <image>collagen.png</image>
+  </product>
+  <product category="collagen">
+    <id>cl3</id>
+    <article>124Cl03</article>
+    <n>Коллаген для суставов тип II</n>
+    <brand>Doctor's Best</brand>
+    <description>Неденатурированный коллаген типа II специально для здоровья суставов и хрящей. Клинически доказанная эффективность при остеоартрите.</description>
+    <weight>120 капс</weight>
+    <flavor>—</flavor>
+    <size>120</size>
+    <price_retail>410</price_retail>
+    <price_wholesale>290</price_wholesale>
+    <price_preorder>270</price_preorder>
+    <price_package>1900</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>5</rating>
+    <country>США</country>
+    <standard>USP Verified</standard>
+    <package_type>Пластиковый флакон</package_type>
+    <image>collagen.png</image>
+  </product>
+  <product category="collagen">
+    <id>cl4</id>
+    <article>124Cl04</article>
+    <n>Коллаген + гиалуроновая кислота</n>
+    <brand>Vital Proteins</brand>
+    <description>Мощный комплекс коллагена с гиалуроновой кислотой для интенсивного увлажнения кожи и восстановления суставного хряща.</description>
+    <weight>300 г</weight>
+    <flavor>Без вкуса</flavor>
+    <size>300</size>
+    <price_retail>450</price_retail>
+    <price_wholesale>315</price_wholesale>
+    <price_preorder>295</price_preorder>
+    <price_package>2100</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>false</in_stock>
+    <rating>4</rating>
+    <country>США</country>
+    <standard>Whole30 Approved</standard>
+    <package_type>Пластиковый контейнер</package_type>
+    <image>collagen.png</image>
+  </product>
+  <product category="collagen">
+    <id>cl5</id>
+    <article>124Cl05</article>
+    <n>Жидкий коллаген ампулы</n>
+    <brand>HECH</brand>
+    <description>Жидкий коллаген в удобных ампулах для максимального усвоения. Готов к употреблению, не требует приготовления. Вкус вишни.</description>
+    <weight>30 ампул</weight>
+    <flavor>Вишня</flavor>
+    <size>30</size>
+    <price_retail>380</price_retail>
+    <price_wholesale>265</price_wholesale>
+    <price_preorder>250</price_preorder>
+    <price_package>1800</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>3</rating>
+    <country>Германия</country>
+    <standard>ISO 9001:2015</standard>
+    <package_type>Ампулы в упаковке</package_type>
+    <image>collagen.png</image>
+  </product>
+
+  <product category="magnesium">
+    <id>mg1</id>
+    <article>124Mg01</article>
+    <n>Магний хелат 400 мг</n>
+    <brand>Solgar</brand>
+    <description>Магний в хелатной форме — наиболее биодоступная форма минерала. Поддерживает нервную систему, снижает стресс и улучшает качество сна.</description>
+    <weight>120 таб</weight>
+    <flavor>—</flavor>
+    <size>120</size>
+    <price_retail>210</price_retail>
+    <price_wholesale>147</price_wholesale>
+    <price_preorder>137</price_preorder>
+    <price_package>1000</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>5</rating>
+    <country>США</country>
+    <standard>Kosher Certified</standard>
+    <package_type>Пластиковый флакон</package_type>
+    <image>magniy.png</image>
+  </product>
+  <product category="magnesium">
+    <id>mg2</id>
+    <article>124Mg02</article>
+    <n>Магний B6</n>
+    <brand>Evalar</brand>
+    <description>Классический комплекс магния с витамином B6. Витамин B6 улучшает усвоение магния и дополнительно поддерживает нервную систему.</description>
+    <weight>90 таб</weight>
+    <flavor>—</flavor>
+    <size>90</size>
+    <price_retail>65</price_retail>
+    <price_wholesale>45</price_wholesale>
+    <price_preorder>42</price_preorder>
+    <price_package>310</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>4</rating>
+    <country>Россия</country>
+    <standard>ГОСТ Р 54956-2012</standard>
+    <package_type>Блистер</package_type>
+    <image>magniy.png</image>
+  </product>
+  <product category="magnesium">
+    <id>mg3</id>
+    <article>124Mg03</article>
+    <n>Магний лимоннокислый порошок</n>
+    <brand>Doctor's Best</brand>
+    <description>Магний в форме цитрата — отличная биодоступность и мягкое действие на ЖКТ. Порошковая форма растворяется в воде, приятный лимонный вкус.</description>
+    <weight>200 г</weight>
+    <flavor>Лимон</flavor>
+    <size>200</size>
+    <price_retail>185</price_retail>
+    <price_wholesale>130</price_wholesale>
+    <price_preorder>120</price_preorder>
+    <price_package>880</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>5</rating>
+    <country>США</country>
+    <standard>GMP Certified</standard>
+    <package_type>Пакет с застёжкой</package_type>
+    <image>magniy.png</image>
+  </product>
+  <product category="magnesium">
+    <id>mg4</id>
+    <article>124Mg04</article>
+    <n>Магний малат</n>
+    <brand>Source Naturals</brand>
+    <description>Магний в форме малата — специально для спортсменов. Яблочная кислота участвует в производстве энергии, снижает мышечную усталость.</description>
+    <weight>180 капс</weight>
+    <flavor>—</flavor>
+    <size>180</size>
+    <price_retail>270</price_retail>
+    <price_wholesale>189</price_wholesale>
+    <price_preorder>177</price_preorder>
+    <price_package>1300</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>false</in_stock>
+    <rating>4</rating>
+    <country>США</country>
+    <standard>GMP Certified</standard>
+    <package_type>Пластиковый флакон</package_type>
+    <image>magniy.png</image>
+  </product>
+  <product category="magnesium">
+    <id>mg5</id>
+    <article>124Mg05</article>
+    <n>Магний + цинк + D3</n>
+    <brand>Now Foods</brand>
+    <description>ZMA-комплекс с магнием, цинком и витамином D3. Улучшает восстановление, повышает уровень тестостерона и качество сна у спортсменов.</description>
+    <weight>100 таб</weight>
+    <flavor>—</flavor>
+    <size>100</size>
+    <price_retail>195</price_retail>
+    <price_wholesale>135</price_wholesale>
+    <price_preorder>127</price_preorder>
+    <price_package>930</price_package>
+    <package_qty>5</package_qty>
+    <currency>BYN</currency>
+    <in_stock>true</in_stock>
+    <rating>5</rating>
+    <country>США</country>
+    <standard>GMP Certified</standard>
+    <package_type>Пластиковый флакон</package_type>
+    <image>magniy.png</image>
+  </product>
+
+</products>

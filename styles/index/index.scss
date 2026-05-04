@@ -1,0 +1,364 @@
+@use '../variables/variables' as *;
+@use '../header/header';
+@use '../footer/footer';
+
+
+main {
+    max-width: $container-max;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font-main;
+    padding: 0 $container-pad;
+
+    h2 {
+        text-align: center;
+        font-size: $fs-xxl;
+        font-weight: 100;
+        margin: 80px 0 48px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 12px;
+
+        .link_block {
+            width: 220px;
+            height: 220px;
+            background-position: center;
+            background-size: 90%;
+            background-repeat: no-repeat;
+            transition: background-size 0.4s;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            cursor: pointer;
+            border-radius: $radius-md;
+            overflow: hidden;
+
+            a {
+                display: block;
+                padding: 0;
+            }
+
+            p {
+                width: 100%;
+                height: 47px;
+                background: rgba($color-primary, 0.6);
+                border-radius: 0 0 5px 5px;
+                color: $color-white;
+                line-height: 47px;
+                font-size: $fs-xl;
+                text-align: center;
+                margin: 0;
+            }
+
+            &:hover {
+                background-size: 100%;
+            }
+        }
+
+        .protein {
+            background-image: url("../../images/main-images/protein.png");
+        }
+
+        .creatine {
+            background-image: url("../../images/main-images/creatine.png");
+        }
+
+        .geyner {
+            background-image: url("../../images/main-images/geyner.png");
+        }
+
+        .collagen {
+            background-image: url("../../images/main-images/collagen.png");
+        }
+
+        .magniy {
+            background-image: url("../../images/main-images/magniy.png");
+        }
+    }
+
+    .likely {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px;
+
+        .card {
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 8px;
+            cursor: pointer;
+            border-radius: $radius-md;
+            transition: box-shadow 0.2s;
+            border: 1px solid transparent;
+
+            &:hover {
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+                border-color: $color-gray-2;
+            }
+
+            img {
+                width: 100%;
+                height: 200px;
+                object-fit: contain;
+                flex-shrink: 0;
+            }
+
+            .heart_btn {
+                position: absolute;
+                top: 12px;
+                right: 12px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 0;
+
+                svg {
+                    display: block;
+                }
+            }
+
+            .rating {
+                display: flex;
+                gap: 4px;
+                margin: 10px 0 8px;
+            }
+
+            p {
+                font-size: $fs-sm;
+                color: $color-text;
+                line-height: 1.4;
+                flex: 1;
+            }
+
+            .price {
+                margin-top: 10px;
+
+                p {
+                    font-size: $fs-xl;
+                    font-weight: 600;
+                    margin: 0;
+                    color: $color-text;
+                    flex: none;
+                }
+            }
+        }
+    }
+
+    .info_boxes {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        text-align: center;
+        margin: 80px 0;
+
+        .info_box {
+            img {
+                width: 80px;
+            }
+
+            h3 {
+                font-size: $fs-md;
+                color: $color-primary-dark;
+                font-weight: 100;
+                padding: 20px 0 10px;
+            }
+
+            p {
+                font-size: $fs-sm;
+                color: $color-text;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .email_box {
+        width: 100%;
+        background: $color-primary-light;
+        padding: 40px 20px 30px;
+        text-align: center;
+
+        .email_title {
+            margin: 0;
+            font-size: 48px;
+            color: $color-primary-dark;
+            font-weight: 400;
+        }
+
+        .email_subtitle {
+            font-size: $fs-xl;
+            color: $color-white;
+            padding: 24px 0 55px;
+        }
+
+        .main_search {
+            display: flex;
+            margin: auto;
+            max-width: 500px;
+            border: 1px solid $color-primary;
+            border-radius: $radius-md;
+
+            input {
+                flex: 1;
+                height: 40px;
+                border: none;
+                border-radius: $radius-md 0 0 $radius-md;
+                padding: 0 16px;
+                font-size: $fs-sm;
+                font-family: $font-main;
+                outline: none;
+            }
+
+            button {
+                padding: 0 20px;
+                height: 40px;
+                background: $color-primary;
+                border: none;
+                color: $color-white;
+                font-size: $fs-sm;
+                font-family: $font-main;
+                border-radius: 0 $radius-md $radius-md 0;
+                cursor: pointer;
+
+                &:hover {
+                    background: $color-primary-dark;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    main .info_boxes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        .info_boxes {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        nav .link_block {
+            width: calc(50% - 6px);
+            height: 180px;
+            background-size: 50%;
+        }
+
+        .likely .card {
+            width: calc(50% - 8px);
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 0 16px;
+
+        h2 {
+            font-size: $fs-xl;
+            margin: 48px 0 28px;
+        }
+
+        .info_boxes {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin: 48px 0;
+
+            .info_box img {
+                width: 56px;
+            }
+
+            .info_box h3 {
+                font-size: $fs-base;
+                padding: 12px 0 6px;
+            }
+        }
+
+        nav {
+            gap: 8px;
+
+            .link_block {
+                width: calc(50% - 4px);
+                height: 130px;
+
+                p {
+                    font-size: $fs-base;
+                    height: 38px;
+                    line-height: 38px;
+                }
+            }
+        }
+
+        .likely {
+            gap: 12px;
+
+            .card {
+                width: calc(50% - 6px);
+
+                img {
+                    height: 150px;
+                }
+
+                .price p {
+                    font-size: $fs-base;
+                }
+            }
+        }
+
+        .email_box {
+            .email_title {
+                font-size: 32px;
+            }
+
+            .email_subtitle {
+                font-size: $fs-base;
+                padding: 16px 0 32px;
+            }
+
+            .main_search {
+                flex-direction: column;
+                border: none;
+                gap: 8px;
+
+                input {
+                    border-radius: $radius-md;
+                    border: 1px solid $color-primary;
+                    height: 40px;
+                    width: 100%;
+                }
+
+                button {
+                    border-radius: $radius-md;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        nav .link_block {
+            width: 100%;
+            height: 120px;
+            background-size: 40%;
+        }
+
+        .likely .card {
+            width: 100%;
+            
+        }
+    }
+}
