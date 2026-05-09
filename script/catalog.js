@@ -150,7 +150,7 @@ function cardList(p) {
         <span>${p.price.toLocaleString("ru")} BYN</span>
         <button class="cat_list_btn${p.in_stock ? "" : " disabled"}"
             ${p.in_stock ? "" : "disabled"}
-            onclick="event.stopPropagation(); addToCart('${p.id}')">
+            onclick="event.stopPropagation(); addToCart('${p.id}', this)">
             ${p.in_stock ? cartSVG() + " В корзину" : "Нет"}
         </button>
     </div>`;
@@ -202,7 +202,13 @@ function toggleCart(btn, id) {
   }
 }
 
-function addToCart(id) {
+function addToCart(id, btn) {
+  btn.textContent = "Добавлено";
+
+  setTimeout(() => {
+    btn.innerHTML = cartSVG() + " В корзину";
+  }, 1500);
+
   const p = products.find((x) => x.id === id);
   if (p)
     cartAdd({
