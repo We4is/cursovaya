@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-const renderCart = () => {
+function renderCart() {
     const items = cartGetItems();
     const emptyEl = document.getElementById('cart_empty');
     const tableEl = document.getElementById('cart_table');
@@ -63,24 +63,27 @@ const renderCart = () => {
     document.getElementById('cart_subtotal').textContent = subtotal.toLocaleString('ru') + ' BYN';
     document.getElementById('cart_tax').textContent = tax.toLocaleString('ru') + ' BYN';
     document.getElementById('cart_total').textContent = subtotal.toLocaleString('ru') + ' BYN';
-};
+}
 
-const changeQty = (id, delta) => {
+function changeQty(id, delta) {
     const items = cartGetItems();
     const item = items.find(p => p.id === id);
     if (item) item.qty = Math.max(1, item.qty + delta);
     cartSave(items);
     cartUpdateBadge();
     renderCart();
-};
+}
 
-const setQty = (id, val) => {
+function setQty(id, val) {
     const items = cartGetItems();
     const item  = items.find(p => p.id === id);
     if (item) item.qty = Math.max(1, parseInt(val) || 1);
     cartSave(items);
     cartUpdateBadge();
     renderCart();
-};
+}
 
-const removeItem = id => { cartRemove(id); renderCart(); };
+function removeItem(id) {
+    cartRemove(id);
+    renderCart();
+}

@@ -103,7 +103,7 @@ function showProducts() {
     }
 }
 
-const cardGrid = p => {
+function cardGrid(p) {
     const inCart = cartHas(p.id);
     return `<div class="cat_card" onclick="location.href='product.html?id=${p.id}'">
         ${p.in_stock ? '' : '<span class="out_badge">Нет в наличии</span>'}
@@ -115,9 +115,10 @@ const cardGrid = p => {
         <p class="cat_card_name">${p.name}</p>
         <div class="cat_card_price">${p.price.toLocaleString('ru')} BYN</div>
     </div>`;
-};
+}
 
-const cardList = p => `
+function cardList(p) {
+    return `
     <div class="cat_list_row" onclick="location.href='product.html?id=${p.id}'">
         <img src="./images/main-images/${p.image}" alt="${p.name}" onerror="this.style.opacity=0.2">
         <span class="sp">${p.name}<br><small>${p.brand}</small></span>
@@ -132,26 +133,31 @@ const cardList = p => `
             ${p.in_stock ? cartSVG() + ' В корзину' : 'Нет'}
         </button>
     </div>`;
+}
 
-const stars = rating => Array.from({length: 5}, (_, i) =>
-    `<svg width="16" height="16" viewBox="0 0 24 24" fill="${i < rating ? '#F5A623' : '#E0E0E0'}">
-        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-    </svg>`).join('');
+function stars(rating) {
+    return Array.from({length: 5}, (_, i) =>
+        `<svg width="16" height="16" viewBox="0 0 24 24" fill="${i < rating ? '#F5A623' : '#E0E0E0'}">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>`).join('');
+}
 
-const heartSVG = filled =>
-    `<svg width="20" height="20" viewBox="0 0 24 24"
+function heartSVG(filled) {
+    return `<svg width="20" height="20" viewBox="0 0 24 24"
         fill="${filled ? '#4174CB' : 'none'}"
         stroke="${filled ? '#4174CB' : '#BDBDBD'}" stroke-width="2">
         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
     </svg>`;
+}
 
-const cartSVG = () =>
-    `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px">
+function cartSVG() {
+    return `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px">
         <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
         <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
     </svg>`;
+}
 
-const toggleCart = (btn, id) => {
+function toggleCart(btn, id) {
     const p = products.find(x => x.id === id);
     if (!p) return;
     if (cartHas(id)) {
@@ -163,21 +169,21 @@ const toggleCart = (btn, id) => {
         btn.classList.add('active');
         btn.innerHTML = heartSVG(true);
     }
-};
+}
 
-const addToCart = id => {
+function addToCart(id) {
     const p = products.find(x => x.id === id);
     if (p) cartAdd({id: p.id, name: p.name, price: p.price, image: p.image, article: p.article});
-};
+}
 
-const buildBrands = () => {
+function buildBrands() {
     const brands = [...new Set(products.map(p => p.brand))].sort();
     const list = document.getElementById('brand_list');
     if (!list) return;
     list.innerHTML = brands.map(b =>
         `<label><input type="checkbox" value="${b}" onchange="showProducts()"> ${b}</label>`
     ).join('');
-};
+}
 
 document.addEventListener('DOMContentLoaded', () => {
 

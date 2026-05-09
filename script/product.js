@@ -3,17 +3,28 @@ const catNames = {
     gainer: 'Гейнеры', collagen: 'Коллаген', magnesium: 'Магний'
 };
 
-const heartSVG = filled =>
-    `<svg width="22" height="22" viewBox="0 0 24 24"
+function heartSVG(filled) {
+    return `<svg width="22" height="22" viewBox="0 0 24 24"
         fill="${filled ? '#4174CB' : 'none'}"
         stroke="${filled ? '#4174CB' : '#BDBDBD'}" stroke-width="2">
         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
     </svg>`;
+}
 
-const stars = rating => Array.from({length: 5}, (_, i) =>
-    `<svg width="20" height="20" viewBox="0 0 24 24" fill="${i < rating ? '#F5A623' : '#E0E0E0'}">
-        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-    </svg>`).join('');
+function stars(rating) {
+    return Array.from({length: 5}, (_, i) =>
+        `<svg width="20" height="20" viewBox="0 0 24 24" fill="${i < rating ? '#F5A623' : '#E0E0E0'}">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>`).join('');
+}
+
+function showError(msg) {
+    const w = document.getElementById('product_wrapper');
+    if (w) w.innerHTML = `<div style="text-align:center;padding:60px;color:#888">
+        <p>${msg}</p><br>
+        <a href="catalog.html" style="color:#4174CB">← Вернуться в каталог</a>
+    </div>`;
+}
 
 document.addEventListener('DOMContentLoaded', async () => {
     const id = new URLSearchParams(location.search).get('id');
@@ -27,7 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         );
 
         if (!node) { showError('Товар не найден'); return; }
-        
+
         const g = tag => node.querySelector(tag)?.textContent.trim() ?? '';
         const p = {
             id:       g('id'),   article:  g('article'),
@@ -68,7 +79,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <div class="prod_meta">
                         <div class="prod_meta_row"><span>Размер:</span> ${p.weight}</div>
                         <div class="prod_meta_row"><span>Бренд:</span>
-                            <a href="catalog.html?cat=${p.category}">${p.brand}</a></div>
+                            ${p.brand}</div>
                         <div class="prod_meta_row"><span>Наличие:</span>
                             ${p.in_stock
                                 ? '<b class="in_yes">Есть в наличии</b>'
@@ -142,11 +153,3 @@ document.addEventListener('DOMContentLoaded', async () => {
         showError('Ошибка загрузки: ' + e.message);
     }
 });
-
-const showError = msg => {
-    const w = document.getElementById('product_wrapper');
-    if (w) w.innerHTML = `<div style="text-align:center;padding:60px;color:#888">
-        <p>${msg}</p><br>
-        <a href="catalog.html" style="color:#4174CB">← Вернуться в каталог</a>
-    </div>`;
-};
