@@ -68,8 +68,8 @@ header .header_nav .btn_catalog {
   justify-content: center;
   align-items: center;
   padding: 8px 32px;
-  background-color: #4174CB;
-  color: #FFFFFF;
+  background-color: #4174cb;
+  color: #ffffff;
   border-radius: 4px;
   font-size: 18px;
   white-space: nowrap;
@@ -78,8 +78,8 @@ header .header_nav .btn_catalog {
   font-family: Arial, Helvetica, sans-serif;
 }
 header .header_nav .btn_catalog:hover {
-  background-color: #153E84;
-  color: #FFFFFF;
+  background-color: #153e84;
+  color: #ffffff;
 }
 header .header_nav .header_search_wrap {
   position: relative;
@@ -90,7 +90,7 @@ header .header_nav .header_search {
   display: flex;
   align-items: center;
   height: 40px;
-  border: 1px solid #4174CB;
+  border: 1px solid #4174cb;
   border-radius: 2px;
   overflow: hidden;
   width: 100%;
@@ -117,9 +117,9 @@ header .header_nav .header_search button {
   align-items: center;
   height: 100%;
   padding: 0 32px;
-  background-color: #4174CB;
+  background-color: #4174cb;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
@@ -128,15 +128,15 @@ header .header_nav .header_search button {
   transition: background-color 0.2s;
 }
 header .header_nav .header_search button:hover {
-  background-color: #153E84;
+  background-color: #153e84;
 }
 header .header_nav .search_dropdown {
   position: absolute;
   top: calc(100% + 4px);
   left: 0;
   right: 0;
-  background: #FFFFFF;
-  border: 1px solid #BDBDBD;
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
   border-radius: 4px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
   z-index: 1000;
@@ -151,14 +151,14 @@ header .header_nav .search_dropdown .sdd_item {
   padding: 10px 16px;
   text-decoration: none;
   color: #333333;
-  border-bottom: 1px solid #F2F2F2;
+  border-bottom: 1px solid #f2f2f2;
   transition: background 0.15s;
 }
 header .header_nav .search_dropdown .sdd_item:last-child {
   border-bottom: none;
 }
 header .header_nav .search_dropdown .sdd_item:hover {
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 header .header_nav .search_dropdown .sdd_item img {
   width: 48px;
@@ -177,7 +177,7 @@ header .header_nav .search_dropdown .sdd_item span {
 }
 header .header_nav .search_dropdown .sdd_item b {
   font-size: 14px;
-  color: #4174CB;
+  color: #4174cb;
   white-space: nowrap;
   font-weight: 600;
 }
@@ -223,8 +223,8 @@ header .header_nav .burger_btn img {
 header .mobile_menu {
   display: none;
   flex-direction: column;
-  background: #FFFFFF;
-  border-top: 1px solid #F2F2F2;
+  background: #ffffff;
+  border-top: 1px solid #f2f2f2;
 }
 header .mobile_menu.open {
   display: flex;
@@ -232,13 +232,13 @@ header .mobile_menu.open {
 header .mobile_menu a {
   padding: 14px 20px;
   font-size: 16px;
-  border-bottom: 1px solid #F2F2F2;
+  border-bottom: 1px solid #f2f2f2;
   display: block;
   color: #333333;
 }
 header .mobile_menu a:hover {
-  background: #F2F2F2;
-  color: #4174CB;
+  background: #f2f2f2;
+  color: #4174cb;
 }
 
 @media (max-width: 1024px) {
@@ -494,7 +494,7 @@ main h1 {
 main h2 {
   font-size: 20px;
   font-weight: 400;
-  color: #4174CB;
+  color: #4174cb;
   margin: 24px 0 12px;
 }
 main .main_header_path table {
@@ -537,7 +537,7 @@ main .map_box .map_box_left_part .phone {
   font-family: Arial, sans-serif;
 }
 main .map_box .map_box_left_part .phone:hover {
-  color: #4174CB;
+  color: #4174cb;
 }
 main .map_box .map_box_left_part .footer_socials {
   display: flex;
@@ -567,7 +567,7 @@ main .jobs_section .jobs_container {
 main .jobs_section .jobs_container .job_card {
   width: 220px;
   height: 250px;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
   border-radius: 4px;
   position: relative;
   overflow: hidden;
@@ -608,7 +608,7 @@ main .jobs_section .jobs_container .job_card--seller {
   background-image: url("../../images/main-images/manage.png");
 }
 main .jobs_section .jobs_container .job_card--hr {
-  background: #4174CB;
+  background: #4174cb;
 }
 main .jobs_section .jobs_container .job_card--supervisor {
   background-image: url("../../images/main-images/superVise.png");
@@ -627,7 +627,7 @@ main .likely_clients .likely_blocks {
 main .likely .likely_blocks .likely_block,
 main .likely_clients .likely_blocks .likely_block {
   flex: 1;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   border-radius: 4px;
   padding: 16px;
   box-shadow: -2px 2px 14px rgba(128, 128, 128, 0.5);

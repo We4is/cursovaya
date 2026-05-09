@@ -1,189 +1,271 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/login/login.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/login/login.css" />
     <title>Вход — SportTime</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header_logo">
-            <div class="header_socials">
-                <a href="#" aria-label="WhatsApp"><img src="./images/header-images/whatsapp.png" alt="WhatsApp"></a>
-                <a href="#" aria-label="Telegram"><img src="./images/header-images/Telegram.png" alt="Telegram"></a>
-            </div>
-            <a href="index.html"><h1>SportTime</h1></a>
-            <nav aria-label="Основная навигация">
-                <a href="about.html">О Компании</a>
-                <a href="index.html#footer">Контакты</a>
-            </nav>
+      <div class="header_logo">
+        <div class="header_socials">
+          <a href="#" aria-label="WhatsApp"
+            ><img src="./images/header-images/whatsapp.png" alt="WhatsApp"
+          /></a>
+          <a href="#" aria-label="Telegram"
+            ><img src="./images/header-images/Telegram.png" alt="Telegram"
+          /></a>
         </div>
-        <div class="header_nav">
-            <div class="header_nav_left">
-                <a href="catalog.html" class="btn_catalog">Каталог</a>
-                <div class="header_search_wrap">
-                    <div class="header_search">
-                        <input type="text" placeholder="Найти любимые товары" aria-label="Поиск товаров" id="search_input">
-                        <button type="button" id="search_btn">Найти</button>
-                    </div>
-                </div>
-            </div>
-            <div class="header_profile">
-                <a href="login-register.html" class="profile_log">
-                    <img src="./images/header-images/Profile.png" alt="Профиль">
-                    <span>Войти</span>
-                </a>
-                <a href="cart.html" class="profile_buy">
-                    <img src="./images/header-images/Buy.png" alt="Корзина">
-                    <span>Корзина</span>
-                </a>
-            </div>
-            <button class="burger_btn" aria-label="Открыть меню" aria-expanded="false">
-                <img src="./images/header-images/menu.png" alt="">
-            </button>
-        </div>
-        <nav class="mobile_menu" aria-label="Мобильная навигация">
-            <a href="about.html">О Компании</a>
-            <a href="index.html#footer">Контакты</a>
-            <a href="catalog.html">Каталог</a>
-            <a href="login-register.html">Войти</a>
-            <a href="cart.html">Корзина</a>
+        <a href="index.html"><h1>SportTime</h1></a>
+        <nav aria-label="Основная навигация">
+          <a href="about.html">О Компании</a>
+          <a href="index.html#footer">Контакты</a>
         </nav>
+      </div>
+      <div class="header_nav">
+        <div class="header_nav_left">
+          <a href="catalog.html" class="btn_catalog">Каталог</a>
+          <div class="header_search_wrap">
+            <div class="header_search">
+              <input
+                type="text"
+                placeholder="Найти любимые товары"
+                aria-label="Поиск товаров"
+                id="search_input"
+              />
+              <button type="button" id="search_btn">Найти</button>
+            </div>
+          </div>
+        </div>
+        <div class="header_profile">
+          <a href="login-register.html" class="profile_log">
+            <img src="./images/header-images/Profile.png" alt="Профиль" />
+            <span>Войти</span>
+          </a>
+          <a href="cart.html" class="profile_buy">
+            <img src="./images/header-images/Buy.png" alt="Корзина" />
+            <span>Корзина</span>
+          </a>
+        </div>
+        <button
+          class="burger_btn"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+        >
+          <img src="./images/header-images/menu.png" alt="" />
+        </button>
+      </div>
+      <nav class="mobile_menu" aria-label="Мобильная навигация">
+        <a href="about.html">О Компании</a>
+        <a href="index.html#footer">Контакты</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="login-register.html">Войти</a>
+        <a href="cart.html">Корзина</a>
+      </nav>
     </header>
 
     <main>
-        <div class="container">
-            <div class="buttons_container" role="tablist">
-                <button class="login active" role="tab" aria-selected="true" data-panel="login">Вход</button>
-                <button class="registration" role="tab" aria-selected="false" data-panel="register">Регистрация</button>
-            </div>
-
-            <form id="form-login" aria-label="Форма входа" autocomplete="on">
-                <div class="input_box">
-                    <label for="email_login" class="sr-only">Email</label>
-                    <input id="email_login" type="email" placeholder="Введите ваш E-mail" autocomplete="email">
-                    <label for="password_login" class="sr-only">Пароль</label>
-                    <input id="password_login" type="password" placeholder="Введите ваш пароль" autocomplete="current-password">
-                </div>
-                <button class="sbm_btn" type="submit">Войти на сайт</button>
-            </form>
-
-            <form id="form-register" aria-label="Форма регистрации" autocomplete="on" style="display:none;">
-                <div class="input_box">
-                    <label for="reg_name" class="sr-only">Имя</label>
-                    <input id="reg_name" type="text" placeholder="Введите ваше имя" autocomplete="given-name">
-                    <label for="reg_email" class="sr-only">Email</label>
-                    <input id="reg_email" type="email" placeholder="Введите ваш E-mail" autocomplete="email">
-                    <label for="reg_pass" class="sr-only">Пароль</label>
-                    <input id="reg_pass" type="password" placeholder="Придумайте пароль" autocomplete="new-password">
-                    <label for="reg_pass2" class="sr-only">Подтверждение пароля</label>
-                    <input id="reg_pass2" type="password" placeholder="Подтвердите пароль" autocomplete="new-password">
-                </div>
-                <button class="sbm_btn" type="submit">Зарегистрироваться</button>
-            </form>
+      <div class="container">
+        <div class="buttons_container" role="tablist">
+          <button
+            class="login active"
+            role="tab"
+            aria-selected="true"
+            data-panel="login"
+          >
+            Вход
+          </button>
+          <button
+            class="registration"
+            role="tab"
+            aria-selected="false"
+            data-panel="register"
+          >
+            Регистрация
+          </button>
         </div>
+
+        <form id="form-login" aria-label="Форма входа" autocomplete="on">
+          <div class="input_box">
+            <label for="email_login" class="sr-only">Email</label>
+            <input
+              id="email_login"
+              type="email"
+              placeholder="Введите ваш E-mail"
+              autocomplete="email"
+            />
+            <label for="password_login" class="sr-only">Пароль</label>
+            <input
+              id="password_login"
+              type="password"
+              placeholder="Введите ваш пароль"
+              autocomplete="current-password"
+            />
+          </div>
+          <button class="sbm_btn" type="submit">Войти на сайт</button>
+        </form>
+
+        <form
+          id="form-register"
+          aria-label="Форма регистрации"
+          autocomplete="on"
+          style="display: none"
+        >
+          <div class="input_box">
+            <label for="reg_name" class="sr-only">Имя</label>
+            <input
+              id="reg_name"
+              type="text"
+              placeholder="Введите ваше имя"
+              autocomplete="given-name"
+            />
+            <label for="reg_email" class="sr-only">Email</label>
+            <input
+              id="reg_email"
+              type="email"
+              placeholder="Введите ваш E-mail"
+              autocomplete="email"
+            />
+            <label for="reg_pass" class="sr-only">Пароль</label>
+            <input
+              id="reg_pass"
+              type="password"
+              placeholder="Придумайте пароль"
+              autocomplete="new-password"
+            />
+            <label for="reg_pass2" class="sr-only">Подтверждение пароля</label>
+            <input
+              id="reg_pass2"
+              type="password"
+              placeholder="Подтвердите пароль"
+              autocomplete="new-password"
+            />
+          </div>
+          <button class="sbm_btn" type="submit">Зарегистрироваться</button>
+        </form>
+      </div>
     </main>
 
     <footer id="footer">
-        <div class="footer_inner">
-            <section class="footer_brand">
-                <p class="footer_logo">SportTime</p>
-                <div class="footer_brand_meta">
-                    <p>© 2026 "SportTime"</p>
-                    <p>Политика конфиденциальности</p>
-                </div>
-                <nav class="footer_socials" aria-label="Социальные сети">
-                    <a href="#"><img src="./images/footer-images/instagram.png" alt="Instagram"/></a>
-                    <a href="#"><img src="./images/footer-images/facebook.png" alt="Facebook"/></a>
-                    <a href="#"><img src="./images/footer-images/vk.png" alt="VK"/></a>
-                    <a href="#"><img src="./images/footer-images/whatsapp.png" alt="WhatsApp"/></a>
-                    <a href="#"><img src="./images/footer-images/Telegram.png" alt="Telegram"/></a>
-                </nav>
-            </section>
-            <section class="footer_col">
-                <nav aria-label="Информация">
-                    <h3>Информация</h3>
-                    <a href="#">О компании</a>
-                    <a href="#">Контакты</a>
-                    <a href="#">Карта сайта</a>
-                </nav>
-                <address>
-                    <h3>Контакты</h3>
-                    <p>+375 29 526 67 42</p>
-                    <p>+375 44 239 91 83</p>
-                    <p>Минск ул. Притыцкого 156</p>
-                </address>
-            </section>
-            <section class="footer_col">
-                <nav aria-label="Розничным покупателям">
-                    <h3>Розничным покупателям</h3>
-                    <a href="#">Как сделать заказ</a>
-                    <a href="#">Доставка и оплата</a>
-                    <a href="#">Возврат</a>
-                    <a href="#">Вопрос-ответ</a>
-                </nav>
-            </section>
-            <section class="footer_col">
-                <nav aria-label="Оптовым покупателям">
-                    <h3>Оптовым покупателям</h3>
-                    <a href="#">Как сделать заказ</a>
-                    <a href="#">Доставка и оплата</a>
-                    <a href="#">Возврат</a>
-                    <a href="#">Вопрос-ответ</a>
-                </nav>
-            </section>
-            <aside class="footer_text">
-                <p>Вы можете оформить заказ по телефону или получить ответы на любые интересующие вас вопросы.</p>
-                <p>Есть вопрос? Напишите нам письмо или воспользуйтесь формой <a href="#">обратной связи</a></p>
-            </aside>
+      <div class="footer_inner">
+        <section class="footer_brand">
+          <p class="footer_logo">SportTime</p>
+          <div class="footer_brand_meta">
+            <p>© 2026 "SportTime"</p>
+            <p>Политика конфиденциальности</p>
+          </div>
+          <nav class="footer_socials" aria-label="Социальные сети">
+            <a href="#"
+              ><img src="./images/footer-images/instagram.png" alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="./images/footer-images/facebook.png" alt="Facebook"
+            /></a>
+            <a href="#"><img src="./images/footer-images/vk.png" alt="VK" /></a>
+            <a href="#"
+              ><img src="./images/footer-images/whatsapp.png" alt="WhatsApp"
+            /></a>
+            <a href="#"
+              ><img src="./images/footer-images/Telegram.png" alt="Telegram"
+            /></a>
+          </nav>
+        </section>
+        <section class="footer_col">
+          <nav aria-label="Информация">
+            <h3>Информация</h3>
+            <a href="#">О компании</a>
+            <a href="#">Контакты</a>
+            <a href="#">Карта сайта</a>
+          </nav>
+          <address>
+            <h3>Контакты</h3>
+            <p>+375 29 526 67 42</p>
+            <p>+375 44 239 91 83</p>
+            <p>Минск ул. Притыцкого 156</p>
+          </address>
+        </section>
+        <section class="footer_col">
+          <nav aria-label="Розничным покупателям">
+            <h3>Розничным покупателям</h3>
+            <a href="#">Как сделать заказ</a>
+            <a href="#">Доставка и оплата</a>
+            <a href="#">Возврат</a>
+            <a href="#">Вопрос-ответ</a>
+          </nav>
+        </section>
+        <section class="footer_col">
+          <nav aria-label="Оптовым покупателям">
+            <h3>Оптовым покупателям</h3>
+            <a href="#">Как сделать заказ</a>
+            <a href="#">Доставка и оплата</a>
+            <a href="#">Возврат</a>
+            <a href="#">Вопрос-ответ</a>
+          </nav>
+        </section>
+        <aside class="footer_text">
+          <p>
+            Вы можете оформить заказ по телефону или получить ответы на любые
+            интересующие вас вопросы.
+          </p>
+          <p>
+            Есть вопрос? Напишите нам письмо или воспользуйтесь формой
+            <a href="#">обратной связи</a>
+          </p>
+        </aside>
+      </div>
+      <hr />
+      <div class="footer_bottom">
+        <small
+          >Интернет-магазин «SportTime» — спортивное питание по всей
+          Беларуси</small
+        >
+        <p>
+          <span>Инн:</span> 667027205771 &nbsp;
+          <span>ОГРН:</span> 310667022200016
+        </p>
+        <div class="footer-payments">
+          <img src="./images/footer-images/mastercard.png" alt="Mastercard" />
+          <img src="./images/footer-images/visa.png" alt="Visa" />
+          <img src="./images/footer-images/mir.png" alt="Мир" />
         </div>
-        <hr/>
-        <div class="footer_bottom">
-            <small>Интернет-магазин «SportTime» — спортивное питание по всей Беларуси</small>
-            <p><span>Инн:</span> 667027205771 &nbsp; <span>ОГРН:</span> 310667022200016</p>
-            <div class="footer-payments">
-                <img src="./images/footer-images/mastercard.png" alt="Mastercard"/>
-                <img src="./images/footer-images/visa.png" alt="Visa"/>
-                <img src="./images/footer-images/mir.png" alt="Мир"/>
-            </div>
-        </div>
+      </div>
     </footer>
 
     <script src="./script/cart.js"></script>
     <script src="./script/header.js"></script>
     <script>
-        let tabBtns = document.querySelectorAll('.buttons_container button');
-        let formLogin = document.getElementById('form-login');
-        let formRegister = document.getElementById('form-register');
+      let tabBtns = document.querySelectorAll(".buttons_container button");
+      let formLogin = document.getElementById("form-login");
+      let formRegister = document.getElementById("form-register");
 
-        tabBtns.forEach(function(btn) {
-            btn.addEventListener('click', function() {
-                tabBtns.forEach(function(b) {
-                    b.classList.remove('active');
-                    b.setAttribute('aria-selected', 'false');
-                });
-                btn.classList.add('active');
-                btn.setAttribute('aria-selected', 'true');
+      tabBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          tabBtns.forEach(function (b) {
+            b.classList.remove("active");
+            b.setAttribute("aria-selected", "false");
+          });
+          btn.classList.add("active");
+          btn.setAttribute("aria-selected", "true");
 
-                if (btn.dataset.panel === 'login') {
-                    formLogin.style.display = '';
-                    formRegister.style.display = 'none';
-                } else {
-                    formLogin.style.display = 'none';
-                    formRegister.style.display = '';
-                }
-            });
+          if (btn.dataset.panel === "login") {
+            formLogin.style.display = "";
+            formRegister.style.display = "none";
+          } else {
+            formLogin.style.display = "none";
+            formRegister.style.display = "";
+          }
         });
+      });
 
-        formLogin.addEventListener('submit', function(e) {
-            e.preventDefault();
-            window.location.href = 'error.html';
-        });
-        formRegister.addEventListener('submit', function(e) {
-            e.preventDefault();
-            window.location.href = 'error.html';
-        });
+      formLogin.addEventListener("submit", function (e) {
+        e.preventDefault();
+        window.location.href = "error.html";
+      });
+      formRegister.addEventListener("submit", function (e) {
+        e.preventDefault();
+        window.location.href = "error.html";
+      });
     </script>
-</body>
+  </body>
 </html>

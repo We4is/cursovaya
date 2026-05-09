@@ -68,8 +68,8 @@ header .header_nav .btn_catalog {
   justify-content: center;
   align-items: center;
   padding: 8px 32px;
-  background-color: #4174CB;
-  color: #FFFFFF;
+  background-color: #4174cb;
+  color: #ffffff;
   border-radius: 4px;
   font-size: 18px;
   white-space: nowrap;
@@ -78,8 +78,8 @@ header .header_nav .btn_catalog {
   font-family: Arial, Helvetica, sans-serif;
 }
 header .header_nav .btn_catalog:hover {
-  background-color: #153E84;
-  color: #FFFFFF;
+  background-color: #153e84;
+  color: #ffffff;
 }
 header .header_nav .header_search_wrap {
   position: relative;
@@ -90,7 +90,7 @@ header .header_nav .header_search {
   display: flex;
   align-items: center;
   height: 40px;
-  border: 1px solid #4174CB;
+  border: 1px solid #4174cb;
   border-radius: 2px;
   overflow: hidden;
   width: 100%;
@@ -117,9 +117,9 @@ header .header_nav .header_search button {
   align-items: center;
   height: 100%;
   padding: 0 32px;
-  background-color: #4174CB;
+  background-color: #4174cb;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
@@ -128,15 +128,15 @@ header .header_nav .header_search button {
   transition: background-color 0.2s;
 }
 header .header_nav .header_search button:hover {
-  background-color: #153E84;
+  background-color: #153e84;
 }
 header .header_nav .search_dropdown {
   position: absolute;
   top: calc(100% + 4px);
   left: 0;
   right: 0;
-  background: #FFFFFF;
-  border: 1px solid #BDBDBD;
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
   border-radius: 4px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
   z-index: 1000;
@@ -151,14 +151,14 @@ header .header_nav .search_dropdown .sdd_item {
   padding: 10px 16px;
   text-decoration: none;
   color: #333333;
-  border-bottom: 1px solid #F2F2F2;
+  border-bottom: 1px solid #f2f2f2;
   transition: background 0.15s;
 }
 header .header_nav .search_dropdown .sdd_item:last-child {
   border-bottom: none;
 }
 header .header_nav .search_dropdown .sdd_item:hover {
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 header .header_nav .search_dropdown .sdd_item img {
   width: 48px;
@@ -177,7 +177,7 @@ header .header_nav .search_dropdown .sdd_item span {
 }
 header .header_nav .search_dropdown .sdd_item b {
   font-size: 14px;
-  color: #4174CB;
+  color: #4174cb;
   white-space: nowrap;
   font-weight: 600;
 }
@@ -223,8 +223,8 @@ header .header_nav .burger_btn img {
 header .mobile_menu {
   display: none;
   flex-direction: column;
-  background: #FFFFFF;
-  border-top: 1px solid #F2F2F2;
+  background: #ffffff;
+  border-top: 1px solid #f2f2f2;
 }
 header .mobile_menu.open {
   display: flex;
@@ -232,13 +232,13 @@ header .mobile_menu.open {
 header .mobile_menu a {
   padding: 14px 20px;
   font-size: 16px;
-  border-bottom: 1px solid #F2F2F2;
+  border-bottom: 1px solid #f2f2f2;
   display: block;
   color: #333333;
 }
 header .mobile_menu a:hover {
-  background: #F2F2F2;
-  color: #4174CB;
+  background: #f2f2f2;
+  color: #4174cb;
 }
 
 @media (max-width: 1024px) {
@@ -560,7 +560,7 @@ main .likely .card {
 }
 main .likely .card:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  border-color: #E0E0E0;
+  border-color: #e0e0e0;
 }
 main .likely .card img {
   width: 100%;
@@ -615,7 +615,7 @@ main .info_boxes .info_box img {
 }
 main .info_boxes .info_box h3 {
   font-size: 18px;
-  color: #153E84;
+  color: #153e84;
   font-weight: 100;
   padding: 20px 0 10px;
 }
@@ -626,14 +626,14 @@ main .info_boxes .info_box p {
 }
 main .email_box {
   width: 100%;
-  background: #8FAFE5;
+  background: #8fafe5;
   padding: 40px 20px 30px;
   text-align: center;
 }
 main .email_box .email_title {
   margin: 0;
   font-size: 48px;
-  color: #153E84;
+  color: #153e84;
   font-weight: 400;
 }
 main .email_box .email_subtitle {
@@ -645,7 +645,7 @@ main .email_box .main_search {
   display: flex;
   margin: auto;
   max-width: 500px;
-  border: 1px solid #4174CB;
+  border: 1px solid #4174cb;
   border-radius: 4px;
 }
 main .email_box .main_search input {
@@ -661,7 +661,7 @@ main .email_box .main_search input {
 main .email_box .main_search button {
   padding: 0 20px;
   height: 40px;
-  background: #4174CB;
+  background: #4174cb;
   border: none;
   color: #ffffff;
   font-size: 14px;
@@ -670,7 +670,7 @@ main .email_box .main_search button {
   cursor: pointer;
 }
 main .email_box .main_search button:hover {
-  background: #153E84;
+  background: #153e84;
 }
 
 @media (max-width: 1100px) {
@@ -752,7 +752,7 @@ main .email_box .main_search button:hover {
   }
   main .email_box .main_search input {
     border-radius: 4px;
-    border: 1px solid #4174CB;
+    border: 1px solid #4174cb;
     height: 40px;
     width: 100%;
   }

@@ -1,19 +1,19 @@
-$color-primary: #4174CB;
-$color-primary-dark: #153E84;
-$color-primary-light: #8FAFE5;
+$color-primary: #4174cb;
+$color-primary-dark: #153e84;
+$color-primary-light: #8fafe5;
 
-$color-text:#333333;
-$color-text-muted:#828282;
-$color-text-light:#BDBDBD;
+$color-text: #333333;
+$color-text-muted: #828282;
+$color-text-light: #bdbdbd;
 
-$color-white:#FFFFFF;
-$color-gray-1:#F2F2F2;
-$color-gray-2:#E0E0E0;
-$color-gray-3:#BDBDBD;
+$color-white: #ffffff;
+$color-gray-1: #f2f2f2;
+$color-gray-2: #e0e0e0;
+$color-gray-3: #bdbdbd;
 
-$color-success:#27AE60; 
-$color-danger:#E74C3C;
-$color-star:#F5A623;
+$color-success: #27ae60;
+$color-danger: #e74c3c;
+$color-star: #f5a623;
 
 $font-main: Arial, Helvetica, sans-serif;
 
@@ -29,89 +29,88 @@ $radius-sm: 2px;
 $radius-md: 4px;
 $radius-lg: 8px;
 
-$shadow-card:   0px 2px 0px 0px #E0E0E0;
-$shadow-hover:  0 4px 16px rgba(0, 0, 0, 0.1);
+$shadow-card: 0px 2px 0px 0px #e0e0e0;
+$shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.1);
 
 $container-max: 1180px;
 $container-pad: 16px;
 
-
 @mixin flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin flex-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 @mixin btn-primary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 8px 16px;
-    background-color: $color-primary;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: $color-primary;
+  color: $color-white;
+  border: none;
+  border-radius: $radius-md;
+  font-family: $font-main;
+  font-size: $fs-base;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: $color-primary-dark;
     color: $color-white;
-    border: none;
-    border-radius: $radius-md;
-    font-family: $font-main;
-    font-size: $fs-base;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.2s;
-    white-space: nowrap;
+  }
 
-    &:hover {
-        background-color: $color-primary-dark;
-        color: $color-white;
-    }
-
-    &:disabled {
-        opacity: 0.5;
-        cursor: default;
-    }
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
 }
 
 @mixin btn-outline {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 8px 16px;
-    background-color: transparent;
-    color: $color-primary;
-    border: 1px solid $color-primary;
-    border-radius: $radius-md;
-    font-family: $font-main;
-    font-size: $fs-base;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.2s;
-    white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: $color-primary;
+  border: 1px solid $color-primary;
+  border-radius: $radius-md;
+  font-family: $font-main;
+  font-size: $fs-base;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+  white-space: nowrap;
 
-    &:hover {
-        background-color: $color-primary;
-        color: $color-white;
-    }
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+  }
 }
 
 @mixin text-ellipsis {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @mixin list-reset {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

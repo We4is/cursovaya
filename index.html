@@ -334,6 +334,17 @@
             });
         });
 
+        let xmlProducts = [];
+        fetch('./products_all.xml')
+            .then(r => r.text())
+            .then(text => {
+                const xml = new DOMParser().parseFromString(text, 'application/xml');
+                xmlProducts = [...xml.querySelectorAll('product')].map(node => ({
+                    id:              node.querySelector('id')?.textContent.trim(),
+                    price_wholesale: parseInt(node.querySelector('price_wholesale')?.textContent) || 0
+                }));
+            });
+
         document.querySelectorAll('.heart_btn').forEach(btn => {
             const id = btn.dataset.id;
 
@@ -346,12 +357,13 @@
                 const priceText = card.querySelector('.price p').textContent;
                 const price = parseInt(priceText.replace(/\D/g, '')) || 0;
                 const img = card.querySelector('img').getAttribute('src').split('/').pop();
+                const price_wholesale = xmlProducts.find(p => p.id === id)?.price_wholesale || 0;
 
                 if (cartHas(id)) {
                     cartRemove(id);
                     btn.innerHTML = HEART_OUT;
                 } else {
-                    cartAdd({ id, name, price, image: img, article: id });
+                    cartAdd({ id, name, price, price_wholesale, image: img, article: id });
                     btn.innerHTML = HEART_FILL;
                 }
             });
