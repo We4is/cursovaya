@@ -113,9 +113,15 @@ document.addEventListener("DOMContentLoaded", async () => {
                         <button id="btn_add" class="btn_cart_prod${disCls}"${dis}>
                             Добавить в корзину
                         </button>
-                        <button id="btn_heart" class="btn_heart_prod${inCart ? " active" : ""}">
-                            ${heartSVG(inCart)}
-                        </button>
+                        ${
+                          p.in_stock
+                            ? `
+                                <button id="btn_heart" class="btn_heart_prod${inCart ? " active" : ""}">
+                                ${heartSVG(inCart)}
+                                </button>
+                              `
+                            : ""
+                        }
                     </div>
                 </div>
             </div>
