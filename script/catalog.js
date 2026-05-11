@@ -128,9 +128,16 @@ function cardGrid(p) {
   const inCart = cartHas(p.id);
   return `<div class="cat_card" onclick="location.href='product.html?id=${p.id}'">
         ${p.in_stock ? "" : '<span class="out_badge">Нет в наличии</span>'}
-        <button class="heart_btn${inCart ? " active" : ""}"
+        
+        ${p.in_stock ? 
+          `
+          <button class="heart_btn${inCart ? " active" : ""}"
             onclick="event.stopPropagation(); toggleCart(this,'${p.id}')"
-            title="В корзину">${heartSVG(inCart)}</button>
+            title="В корзину">${heartSVG(inCart)}
+        </button>
+          `
+          : ""}
+        
         <img src="./images/main-images/${p.image}" alt="${p.name}" onerror="this.style.opacity=0.2">
         <div class="cat_card_stars">${stars(p.rating)}</div>
         <p class="cat_card_name">${p.name}</p>
