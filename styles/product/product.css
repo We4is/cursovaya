@@ -343,19 +343,18 @@ footer .footer_col {
   flex-direction: column;
   gap: 20px;
 }
+footer .footer_col h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f2f2f2;
+  margin-bottom: 2px;
+}
 footer .footer_col nav,
 footer .footer_col address {
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-style: normal;
-}
-footer .footer_col nav h3,
-footer .footer_col address h3 {
-  font-size: 14px;
-  font-weight: 500;
-  color: #f2f2f2;
-  margin-bottom: 2px;
 }
 footer .footer_col nav a,
 footer .footer_col address a {

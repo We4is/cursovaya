@@ -343,19 +343,18 @@ footer .footer_col {
   flex-direction: column;
   gap: 20px;
 }
+footer .footer_col h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #f2f2f2;
+  margin-bottom: 2px;
+}
 footer .footer_col nav,
 footer .footer_col address {
   display: flex;
   flex-direction: column;
   gap: 10px;
   font-style: normal;
-}
-footer .footer_col nav h3,
-footer .footer_col address h3 {
-  font-size: 14px;
-  font-weight: 500;
-  color: #f2f2f2;
-  margin-bottom: 2px;
 }
 footer .footer_col nav a,
 footer .footer_col address a {
@@ -477,7 +476,7 @@ main {
   margin: auto;
   padding: 0 16px;
 }
-main section {
+main .section {
   width: 100%;
 }
 main .first_h {
@@ -632,11 +631,13 @@ main .likely_clients .likely_blocks .likely_block {
   padding: 16px;
   box-shadow: -2px 2px 14px rgba(128, 128, 128, 0.5);
 }
-main .likely .likely_blocks .likely_block h3,
-main .likely_clients .likely_blocks .likely_block h3 {
+main .likely .likely_blocks .likely_block h2,
+main .likely_clients .likely_blocks .likely_block h2 {
   font-size: 16px;
   font-weight: 600;
+  margin: 0;
   margin-bottom: 10px;
+  color: black;
 }
 main .likely .likely_blocks .likely_block p,
 main .likely_clients .likely_blocks .likely_block p {

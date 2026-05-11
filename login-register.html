@@ -17,7 +17,7 @@
             ><img src="./images/header-images/Telegram.png" alt="Telegram"
           /></a>
         </div>
-        <a href="index.html"><h1>SportTime</h1></a>
+        <h1><a href="index.html">SportTime</a></h1>
         <nav aria-label="Основная навигация">
           <a href="about.html">О Компании</a>
           <a href="index.html#footer">Контакты</a>
@@ -67,21 +67,9 @@
 
     <main>
       <div class="container">
-        <div class="buttons_container" role="tablist">
-          <button
-            class="login active"
-            role="tab"
-            aria-selected="true"
-            data-panel="login"
-          >
-            Вход
-          </button>
-          <button
-            class="registration"
-            role="tab"
-            aria-selected="false"
-            data-panel="register"
-          >
+        <div class="buttons_container">
+          <button class="login active" data-panel="login">Вход</button>
+          <button class="registration" data-panel="register">
             Регистрация
           </button>
         </div>
@@ -147,9 +135,9 @@
       </div>
     </main>
 
-    <footer id="footer">
+    <footer class="footer" id="footer">
       <div class="footer_inner">
-        <section class="footer_brand">
+        <div class="footer_brand">
           <p class="footer_logo">SportTime</p>
           <div class="footer_brand_meta">
             <p>© 2026 "SportTime"</p>
@@ -170,39 +158,45 @@
               ><img src="./images/footer-images/Telegram.png" alt="Telegram"
             /></a>
           </nav>
-        </section>
-        <section class="footer_col">
+        </div>
+
+        <div class="footer_col">
           <nav aria-label="Информация">
-            <h3>Информация</h3>
+            <h2>Информация</h2>
             <a href="#">О компании</a>
+            <a href="#">Маркетинговые материалы</a>
             <a href="#">Контакты</a>
             <a href="#">Карта сайта</a>
           </nav>
+
+          <h2>Контакты</h2>
           <address>
-            <h3>Контакты</h3>
             <p>+375 29 526 67 42</p>
             <p>+375 44 239 91 83</p>
             <p>Минск ул. Притыцкого 156</p>
           </address>
-        </section>
-        <section class="footer_col">
+        </div>
+
+        <div class="footer_col">
           <nav aria-label="Розничным покупателям">
-            <h3>Розничным покупателям</h3>
+            <h2>Розничным покупателям</h2>
             <a href="#">Как сделать заказ</a>
             <a href="#">Доставка и оплата</a>
             <a href="#">Возврат</a>
             <a href="#">Вопрос-ответ</a>
           </nav>
-        </section>
-        <section class="footer_col">
+        </div>
+
+        <div class="footer_col">
           <nav aria-label="Оптовым покупателям">
-            <h3>Оптовым покупателям</h3>
+            <h2>Оптовым покупателям</h2>
             <a href="#">Как сделать заказ</a>
             <a href="#">Доставка и оплата</a>
             <a href="#">Возврат</a>
             <a href="#">Вопрос-ответ</a>
           </nav>
-        </section>
+        </div>
+
         <aside class="footer_text">
           <p>
             Вы можете оформить заказ по телефону или получить ответы на любые
@@ -214,7 +208,9 @@
           </p>
         </aside>
       </div>
+
       <hr />
+
       <div class="footer_bottom">
         <small
           >Интернет-магазин «SportTime» — спортивное питание по всей
@@ -234,38 +230,6 @@
 
     <script src="./script/cart.js"></script>
     <script src="./script/header.js"></script>
-    <script>
-      let tabBtns = document.querySelectorAll(".buttons_container button");
-      let formLogin = document.getElementById("form-login");
-      let formRegister = document.getElementById("form-register");
-
-      tabBtns.forEach(function (btn) {
-        btn.addEventListener("click", function () {
-          tabBtns.forEach(function (b) {
-            b.classList.remove("active");
-            b.setAttribute("aria-selected", "false");
-          });
-          btn.classList.add("active");
-          btn.setAttribute("aria-selected", "true");
-
-          if (btn.dataset.panel === "login") {
-            formLogin.style.display = "";
-            formRegister.style.display = "none";
-          } else {
-            formLogin.style.display = "none";
-            formRegister.style.display = "";
-          }
-        });
-      });
-
-      formLogin.addEventListener("submit", function (e) {
-        e.preventDefault();
-        window.location.href = "error.html";
-      });
-      formRegister.addEventListener("submit", function (e) {
-        e.preventDefault();
-        window.location.href = "error.html";
-      });
-    </script>
+    <script src="./script/log-reg.js"></script>
   </body>
 </html>

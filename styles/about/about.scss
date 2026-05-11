@@ -8,7 +8,7 @@ main {
   margin: auto;
   padding: 0 $container-pad;
 
-  section {
+  .section {
     width: 100%;
   }
 
@@ -199,10 +199,12 @@ main {
       padding: 16px;
       box-shadow: -2px 2px 14px rgba(128, 128, 128, 0.5);
 
-      h3 {
+      h2 {
         font-size: $fs-base;
         font-weight: 600;
+        margin: 0;
         margin-bottom: 10px;
+        color: black;
       }
 
       p {

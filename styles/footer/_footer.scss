@@ -72,20 +72,18 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
+    h2 {
+      font-size: 14px;
+      font-weight: 500;
+      color: $color-gray-light;
+      margin-bottom: 2px;
+    }
     nav,
     address {
       display: flex;
       flex-direction: column;
       gap: 10px;
       font-style: normal;
-
-      h3 {
-        font-size: 14px;
-        font-weight: 500;
-        color: $color-gray-light;
-        margin-bottom: 2px;
-      }
 
       a {
         font-size: 13px;
