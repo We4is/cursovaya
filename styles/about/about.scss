@@ -244,7 +244,9 @@ main {
       width: 100%;
     }
   }
-
+  .jobs_container { 
+    flex-wrap: wrap;
+  }
   main .about_company .about_company_inner {
     flex-direction: column;
 

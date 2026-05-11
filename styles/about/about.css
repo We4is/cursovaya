@@ -671,6 +671,9 @@ main .about_company .about_company_inner img {
   main .map_box iframe {
     width: 100%;
   }
+  .jobs_container {
+    flex-wrap: wrap;
+  }
   main .about_company .about_company_inner {
     flex-direction: column;
   }
