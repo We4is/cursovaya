@@ -129,14 +129,16 @@ function cardGrid(p) {
   return `<div class="cat_card" onclick="location.href='product.html?id=${p.id}'">
         ${p.in_stock ? "" : '<span class="out_badge">Нет в наличии</span>'}
         
-        ${p.in_stock ? 
-          `
+        ${
+          p.in_stock
+            ? `
           <button class="heart_btn${inCart ? " active" : ""}"
             onclick="event.stopPropagation(); toggleCart(this,'${p.id}')"
             title="В корзину">${heartSVG(inCart)}
         </button>
           `
-          : ""}
+            : ""
+        }
         
         <img src="./images/main-images/${p.image}" alt="${p.name}" onerror="this.style.opacity=0.2">
         <div class="cat_card_stars">${stars(p.rating)}</div>

@@ -39,7 +39,7 @@ function renderCart() {
   const sumEl = document.getElementById("cart_summary");
   const actEl = document.getElementById("cart_actions");
 
-  const show = (el, val) => {
+  function show(el, val){
     if (el) el.style.display = val;
   };
 
