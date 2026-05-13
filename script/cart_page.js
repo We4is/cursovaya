@@ -29,7 +29,9 @@ document.getElementById("order_modal_submit")?.addEventListener("click", () => {
   const re = /^\+375\d{9}$/;
 
   if (!phone || !re.test(String(phone))) {
-    document.getElementById("order_modal_phone").classList.add("input_error");
+    const phoneError = document.getElementById("order_modal_phone");
+    phoneError.classList.add("input_error");
+    phoneError.value = "";
     return;
   }
   cartClear();
