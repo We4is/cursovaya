@@ -6,7 +6,10 @@ document.getElementById("btn_clear_cart")?.addEventListener("click", () => {
 });
 
 document.querySelectorAll(".btn_checkout").forEach((btn) => {
-  btn.addEventListener("click", () => openOrderModal());
+  btn.addEventListener("click", () => {
+    if (cartGetItems().length != 0) openOrderModal();
+    else return;
+  });
 });
 
 document
@@ -23,7 +26,9 @@ document.addEventListener("keydown", (e) => {
 
 document.getElementById("order_modal_submit")?.addEventListener("click", () => {
   const phone = document.getElementById("order_modal_phone").value.trim();
-  if (!phone) {
+  const re = /^\+375\d{9}$/;
+
+  if (!phone || !re.test(String(phone))) {
     document.getElementById("order_modal_phone").classList.add("input_error");
     return;
   }
@@ -39,9 +44,9 @@ function renderCart() {
   const sumEl = document.getElementById("cart_summary");
   const actEl = document.getElementById("cart_actions");
 
-  function show(el, val){
+  function show(el, val) {
     if (el) el.style.display = val;
-  };
+  }
 
   if (!items.length) {
     show(emptyEl, "flex");
