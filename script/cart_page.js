@@ -114,15 +114,15 @@ function renderCart() {
         </div>`;
     })
     .join("");
-
   const subtotal = cartTotal();
   const tax = Math.round(subtotal / 6);
+
   document.getElementById("cart_subtotal").textContent =
     subtotal.toLocaleString("ru") + " BYN";
   document.getElementById("cart_tax").textContent =
     tax.toLocaleString("ru") + " BYN";
   document.getElementById("cart_total").textContent =
-    subtotal.toLocaleString("ru") + " BYN";
+    (subtotal + tax).toLocaleString("ru") + " BYN";
 }
 
 function changeQty(id, delta) {
